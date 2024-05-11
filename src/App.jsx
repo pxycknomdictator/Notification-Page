@@ -5,8 +5,11 @@ import Comments from "./components/Comments/Comments";
 const App = () => {
   return (
     <>
-      <main className="w-full h-full grid place-items-center">
-        <section className="sm:w-full md:w-[600px] lg:w-[660px] shadow-lg py-4 px-6">
+      <main className="w-full h-full grid place-items-center bg-Very-light-grayish-blue">
+        <section
+          id="shadow"
+          className="sm:w-full bg-White ssm:px-2 rounded-md md:w-[600px] lg:w-[660px] py-4 px-6 sm:px-6"
+        >
           <Header></Header>
           <div className="mt-6 grid gap-3">
             <Comments></Comments>

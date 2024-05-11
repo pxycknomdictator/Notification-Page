@@ -15,6 +15,21 @@ export default {
       "Dark-grayish-blue": "hsl(219, 12%, 42%)",
       "Very-dark-blue": "hsl(224, 21%, 14%)",
     },
+    screens: {
+      ssm: "320px",
+
+      smd: "500px",
+
+      sm: "640px",
+
+      md: "768px",
+
+      lg: "1024px",
+
+      xl: "1280px",
+
+      "2xl": "1536px",
+    },
     extend: {},
   },
   plugins: [],

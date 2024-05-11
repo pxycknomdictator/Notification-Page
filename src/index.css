@@ -22,7 +22,31 @@
     right: -15px;
   }
 
+  #shadow {
+    box-shadow: 0px 6px 20px hsl(0deg 7% 93% / 92%);
+  }
+
   .animation {
     transition: all 0.25s ease-in-out;
+  }
+
+  @media (min-width: 320px) {
+    .red-Dot::after {
+      top: 27px;
+      right: 1px;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .red-Dot::after {
+      top: 5px;
+      right: -30px;
+    }
+  }
+  @media (min-width: 768px) {
+    .red-Dot::after {
+      top: 7px;
+      right: -23px;
+    }
   }
 }

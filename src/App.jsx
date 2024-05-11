@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header/Header";
 import Comments from "./components/Comments/Comments";
+import data from "./data.json";
 
 const App = () => {
   return (
@@ -12,7 +13,9 @@ const App = () => {
         >
           <Header></Header>
           <div className="mt-6 grid gap-3">
-            <Comments></Comments>
+            {data.map((elements, index) => (
+              <Comments key={index} comments={elements}></Comments>
+            ))}
           </div>
         </section>
       </main>

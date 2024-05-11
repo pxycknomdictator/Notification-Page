@@ -22,6 +22,15 @@
     right: -15px;
   }
 
+  .activate {
+    height: fit-content;
+  }
+
+  .deactivate {
+    overflow: hidden;
+    max-height: 0px;
+  }
+
   #shadow {
     box-shadow: 0px 6px 20px hsl(0deg 7% 93% / 92%);
   }
@@ -30,10 +39,25 @@
     transition: all 0.25s ease-in-out;
   }
 
+  .colorBlue {
+    color: hsl(219, 85%, 26%);
+    font-weight: 600;
+  }
+
   @media (min-width: 320px) {
     .red-Dot::after {
       top: 27px;
       right: 1px;
+    }
+    #chess {
+      top: 0px;
+      right: -10px;
+    }
+  }
+
+  @media (min-width: 375px) {
+    #chess {
+      right: -18px;
     }
   }
 
@@ -42,11 +66,29 @@
       top: 5px;
       right: -30px;
     }
+    #chess {
+      right: -191px;
+      top: -9px;
+    }
   }
   @media (min-width: 768px) {
     .red-Dot::after {
       top: 7px;
       right: -23px;
+    }
+    #chess {
+      right: -165px;
+      top: -9px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .red-Dot::after {
+      top: 7px;
+      right: -23px;
+    }
+    #chess {
+      right: -197px;
+      top: -11px;
     }
   }
 }

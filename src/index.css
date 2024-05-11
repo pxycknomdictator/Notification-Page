@@ -3,7 +3,26 @@
 @tailwind utilities;
 
 @layer base {
-  html {
+  html,
+  body,
+  #root {
     font-family: "Plus Jakarta Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+  }
+
+  .red-Dot::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 0, 0, 0.658);
+    border-radius: 50%;
+    top: 7px;
+    right: -15px;
+  }
+
+  .animation {
+    transition: all 0.25s ease-in-out;
   }
 }

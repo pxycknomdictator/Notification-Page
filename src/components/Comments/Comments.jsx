@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import smallImage from "../../../public/images/image-chess.webp";
+import smallImage from "/images/image-chess.webp";
 
-const Comments = ({ comments, Id }) => {
+const Comments = ({ comments }) => {
   const {
     username,
     post,

@@ -14,11 +14,7 @@ const App = () => {
           <Header></Header>
           <div className="mt-6 grid gap-3">
             {data.map((elements) => (
-              <Comments
-                key={elements.uniqueKey}
-                comments={elements}
-                Id={elements.uniqueKey}
-              ></Comments>
+              <Comments key={elements.uniqueKey} comments={elements}></Comments>
             ))}
           </div>
         </section>

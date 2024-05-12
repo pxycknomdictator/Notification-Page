@@ -1,5 +1,6 @@
 [
   {
+    "uniqueKey": 1,
     "username": "MarkWebber",
     "post": "reacted to your recent post",
     "reactedPost": "My first tournament today!",
@@ -10,6 +11,7 @@
     "profileimage": "images/avatar-mark-webber.webp"
   },
   {
+    "uniqueKey": 2,
     "username": "Angela Gray",
     "post": "followed you",
     "reactedPost": "",
@@ -20,6 +22,7 @@
     "profileimage": "images/avatar-angela-gray.webp"
   },
   {
+    "uniqueKey": 3,
     "username": "Jacob Thompson",
     "post": "has joined your group",
     "reactedPost": "Chess Club",
@@ -30,6 +33,7 @@
     "profileimage": "images/avatar-jacob-thompson.webp"
   },
   {
+    "uniqueKey": 4,
     "username": "Rizky Hasanudding",
     "post": "send you a private message",
     "reactedPost": "",
@@ -40,6 +44,7 @@
     "profileimage": "images/avatar-rizky-hasanuddin.webp"
   },
   {
+    "uniqueKey": 5,
     "username": "Kimberly Smith",
     "post": "commented on your picture",
     "reactedPost": "",
@@ -50,6 +55,7 @@
     "profileimage": "images/avatar-kimberly-smith.webp"
   },
   {
+    "uniqueKey": 6,
     "username": "Nathan Peterson",
     "post": "reacted to your recent post",
     "reactedPost": "end-game strategies to increate your win rate",
@@ -60,6 +66,7 @@
     "profileimage": "images/avatar-nathan-peterson.webp"
   },
   {
+    "uniqueKey": 7,
     "username": "Anna Kim",
     "post": "left the group",
     "reactedPost": "Chess Club",

@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import smallImage from "../../../public/images/image-chess.webp";
 
-const Comments = ({ comments }) => {
+const Comments = ({ comments, Id }) => {
   const {
     username,
     post,
@@ -13,9 +13,22 @@ const Comments = ({ comments }) => {
     profileimage,
   } = comments;
 
+  const [active, setActive] = useState(false);
+
+  const ClickEvent = () => {
+    setActive((preActive) => !preActive);
+  };
+
   return (
-    <section className="w-full bg-Very-light-grayish-blue rounded-lg">
-      <div className="ssm:px-4 ssm:gap-3 flex items-center gap-5 py-3 px-6 cursor-pointer">
+    <section
+      className={`w-full ${
+        active ? "transparent" : "bg-Very-light-grayish-blue"
+      } rounded-lg`}
+    >
+      <div
+        onClick={ClickEvent}
+        className="ssm:px-4 ssm:gap-3 flex items-center gap-5 py-3 px-6 cursor-pointer"
+      >
         <div className="w-12 ssm:w-[3.4rem] sm:w-14">
           <img className="w-full" src={profileimage} alt="profile-Image" />
         </div>
@@ -46,8 +59,8 @@ const Comments = ({ comments }) => {
           <span className="text-Grayish-blue text-xs">{postTime}</span>
         </div>
       </div>
-      <div className="deactivate">
-        <article className="ssm:ml-0 ssm:mt-2 ssm:mr-0 sm:mr-4 sm:ml-[5.3rem] rounded-lg md:text-[.7rem] lg:text-[.9rem] bg-White text-Grayish-blue border border-r-Grayish-blue py-3 px-3 ml-24 mr-4">
+      <div className={`${active ? "activate" : "deactivate"}`}>
+        <article className="ssm:ml-0 ssm:mt-2 ssm:mr-0 sm:mr-4 sm:ml-[5.3rem] rounded-lg md:text-[.7rem] lg:text-[.9rem] bg-White text-Grayish-blue border border-r-Grayish-blue py-3 px-3 ml-24 mr-4 hover:bg-Very-light-grayish-blue hover:border-none cursor-pointer transition-all delay-200">
           {answer}
         </article>
       </div>

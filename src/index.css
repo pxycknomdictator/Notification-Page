@@ -22,13 +22,47 @@
     right: -15px;
   }
 
+  .transparent {
+    background: transparent;
+  }
+
   .activate {
-    height: fit-content;
+    transition: all 0.4s ease-in-out;
+    max-height: 150px;
+    animation: fade 0.5s ease-in-out 0s 1 normal none;
   }
 
   .deactivate {
-    overflow: hidden;
     max-height: 0px;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    animation: fadeOff 0.5s ease-out 0s 1 reverse none;
+  }
+
+  /* animation */
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOff {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   #shadow {
